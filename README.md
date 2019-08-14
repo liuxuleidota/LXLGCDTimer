@@ -2,7 +2,7 @@
 iOS中定时器的使用
 gcdTimer vs NSTimer
 
-使用NSTimer，注意点：
+使用NSTimer，注意点：<br>
 一、切换runloop时失效
 默认情况下NSTimer会加入到runloop defaultMode中，当界面上有scrollview滑动时，runloop会切换到trackingMode，此时NSTimer会暂停，如果要避免此情况，如下：
 ```
@@ -78,7 +78,7 @@ NSTimer与self相互持有，使用weakSelf解除循环引用：
 timer是在主线程中创建的，但是这里我在子线程中操作，同样有效，有知道的请解答下
 ***
 使用GCDTimer
-引入demo中LXLGCDTimer目录
+引入demo中LXLGCDTimer目录<br>
 一、创建GCDTimer
 ```
 - (IBAction)startGCDTimer:(id)sender {
